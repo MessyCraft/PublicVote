@@ -1,0 +1,28 @@
+name: PublicVote
+version: '${project.version}'
+main: com.github.messycraft.publicvote.PublicVote
+api-version: '1.13'
+author: ImCur_
+
+commands:
+  pvote:
+    permission: publicvote.vote
+  createvote:
+    aliases: [ cv ]
+    permission: publicvote.create
+  votelist:
+    aliases: [ votes ]
+  backupvotes:
+    permission: publicvote.backup
+
+permissions:
+  publicvote.vote:
+    default: true
+  publicvote.create:
+    default: op
+  publicvote.delete:
+    default: op
+  publicvote.backup:
+    default: op
+  publicvote.see-private:
+    default: op
